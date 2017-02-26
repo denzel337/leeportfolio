@@ -13,6 +13,7 @@
     height: 48px;
     margin-right: 0.5em;
   }
+
   .header__title {
     margin-left: 0;
     font-size: 2em;
@@ -29,22 +30,26 @@
     /* Optionally, we animate the drawer. */
     transition: transform 0.3s ease;
   }
+
   .nav.open {
     -webkit-transform: translate(0, 0);
     transform: translate(0, 0);
   }
+
   .nav__item {
     display: list-item;
     border-bottom: 1px solid #E0E0E0;
     width: 100%;
     text-align: left;
   }
+
   .header__menu {
     display: inline-block;
     position: absolute;
     right: 0;
     padding: 1em;
   }
+
   .header__menu svg {
     width: 32px;
     fill: #E0E0E0;
@@ -74,7 +79,7 @@
     margin-right: auto;
   }
 }
-.img-responsive{
-  max-width:100%
 
+.img-responsive {
+  max-width:100%
 }
