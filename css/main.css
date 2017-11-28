@@ -6,98 +6,81 @@ body, html {
 }
 
 body {
+
   font-family: Roboto;
   font-size: 16px;
   line-height: 1.25em;
   color: #e5e4d7;
-  background-image: url(../images/mic.png);
-  background-size: cover;
-  background-repeat: repeat-y;
-  background-color: grey;
+
+
 }
 
 h1, h2, h3, h4, h5 {
   margin: 5px;
 }
 
-header, nav, footer, section, div {
-  box-sizing: border-box;
+
+
+
+
+/* The hero image */
+.hero-image {
+    /* The image used */
+    background-image: url(../images/denzelpr.jpg);
+
+    /* Set a specific height */
+    height: 100%;
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+}
+.sidenav {
+    height: 100%;
+    width: 150px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    font-family: 'Playfair Display', serif;
 }
 
-/*
- *
- * Header
- *
- */
-
-.header {
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
-  min-height: 56px;
-  transition: min-height 0.3s;
-
+.sidenav a {
+    padding: 8px 8px 8px 17px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
 }
 
-.header__inner {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+.sidenav a:hover {
+    color: #f1f1f1;
 }
 
-.header__logo {
-  height: 72px;
-  margin-right: 1em;
-  vertical-align: top;
-  margin-top: 12px;
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
 }
 
-.header__title {
-  font-weight: 300;
-  font-size: 4em;
-  margin: 0.5em 0.25em;
-  display: inline-block;
-  color: #e5e4d7;
+.sidenav img{
+  width: 35%;
 }
 
-.nav {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-
-  z-index: 1;
-
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
-
-.nav__list {
-  width: 100%;
-  padding: 0;
-  margin: 0;
-
-}
-
-.nav__item  {
-  box-sizing: border-box;
-  display: inline-block;
-  width: 24%;
-  text-align: center;
-  line-height: 24px;
-  padding: 24px;
-  text-transform: uppercase;
-
-}
-
-.nav a {
-  text-decoration: none;
-  color: #e5e4d7;
-  padding: 1.5em;
-
-}
-
-.nav a:hover {
-  text-decoration: underline;
-  color: #212121;
-
-}
-
 
 /*
  *
@@ -106,15 +89,64 @@ header, nav, footer, section, div {
  */
 
 main {
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+
   width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
 
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
 
+.transform{
+  transform: translate(56px,8px) rotate(270deg);
+  font-size: 20px;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 5px;
+  color: black;
+}
 
+.quote{
+  transform: translate(174px,260px);
+  animation-name: appear;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-delay: 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  font-family: 'Spectral SC', serif;
+  font-size: 25px;
+  opacity: 0;
+}
 
+.about{
+  display: flex;
+  width: 100%;
+  margin: 15px;
+  flex-wrap: wrap;
+  color: black;
+}
+
+@keyframes appear {
+  0%{
+    opacity: 0;
+
+  }
+  25%{
+    opacity: 0.2;
+  }
+  50%{
+    opacity: 0.5;
+  }
+  75%{
+    opacity: 0.8;
+  }
+  100%{
+    opacity: 1;
+  }
+}
 /*
  *
  * Footer
@@ -140,11 +172,19 @@ footer a {
 }
 
 .project {
- box-sizing: border-box;
- margin-top: 15px;
- margin-bottom: 15px;
+ margin: 0;
+ padding: 0;
+ list-style: none;
+ background-color: blue;
 }
 
+#project li {
+  width: 45%;
+  float: left;
+  margin: 2.5%;
+  background-color: #f5f5f5;
+  color: #bdc3c7
+}
 .thumbnail {
  border: 1px  #ddd;
  box-shadow: 0 0 0 3px #fff, 0 0 0 5px #ddd, 0 0 0 10px #fff;
@@ -155,7 +195,7 @@ footer a {
 #denzel.img-responsive {
   margin:auto;
   display: block;
-  width: 50%;
+  width: 30%;
   box-shadow: 8px 8px 10px #aaa;
   border-radius: 80%;
 }

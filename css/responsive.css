@@ -22,7 +22,7 @@
   .nav {
     z-index: 10;
     background-color: #fff;
-    width: 300px;
+    width: 100%;
     position: absolute;
     /* This trasform moves the drawer off canvas. */
     -webkit-transform: translate(-300px, 0);
@@ -73,12 +73,23 @@
 }
 
 @media screen and (min-width: 850px) {
-  main, .header__inner, .nav, .content {
+  main, .header__inner, .content {
     width: 850px;
     margin-left: auto;
     margin-right: auto;
   }
 }
+
+
+@media screen and (min-width: 500) {
+  .header_content {
+
+    display: none;
+  }
+
+}
+
+
 
 .img-responsive {
   max-width:100%
