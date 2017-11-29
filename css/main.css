@@ -37,6 +37,13 @@ h1, h2, h3, h4, h5 {
     background-size: cover;
     position: relative;
     display: flex;
+    animation: 1s fadein 1.2s forwards;
+    opacity: 0;
+}
+@keyframes fadein {
+  100% {
+    opacity: 1;
+  }
 }
 .sidenav {
     height: 100%;
@@ -128,6 +135,14 @@ main {
   flex-wrap: wrap;
   color: black;
 }
+.aboutImage{
+  border: 4px solid black;
+
+}
+
+.bio{
+  text-align: center;
+}
 
 @keyframes appear {
   0%{
@@ -147,6 +162,51 @@ main {
     opacity: 1;
   }
 }
+
+
+.projects{
+  margin: 0 auto;
+   max-width: 1200px;
+   padding: 0 1rem;
+   margin-top: 5em;
+   color: black;
+
+ }
+
+ .projects img:hover{
+   background-color: black;
+ }
+
+ .responsive-image {
+   max-width: 100%;
+ }
+
+ .cell img {
+  display: block;
+}
+@media screen and (min-width: 600px) {
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}
+  @media screen and (min-width: 1000px) {
+  .cell {
+    width: calc(100% / 3);
+  }
+}
+  .cell {
+    width: 50%;
+  }
+
+  @media screen and (max-width: 1200px) {
+  .quote{
+        transform: translate(55px,268px);
+        font-size: 18px;
+  }
+}
+@media
 /*
  *
  * Footer
@@ -178,33 +238,7 @@ footer a {
  background-color: blue;
 }
 
-#project li {
-  width: 45%;
-  float: left;
-  margin: 2.5%;
-  background-color: #f5f5f5;
-  color: #bdc3c7
-}
-.thumbnail {
- border: 1px  #ddd;
- box-shadow: 0 0 0 3px #fff, 0 0 0 5px #ddd, 0 0 0 10px #fff;
- margin: 40px;
- padding: 10px;
-}
 
-#denzel.img-responsive {
-  margin:auto;
-  display: block;
-  width: 30%;
-  box-shadow: 8px 8px 10px #aaa;
-  border-radius: 80%;
-}
-
-#contact.container {
-  border: 3px  solid green;
-  box-sizing: border-box;
-  margin-bottom: 15px;
-}
 
 .links {
   margin: auto;
