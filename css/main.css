@@ -17,6 +17,7 @@ body {
 
 h1, h2, h3, h4, h5 {
   margin: 5px;
+  text-align: center;
 }
 
 
@@ -26,7 +27,7 @@ h1, h2, h3, h4, h5 {
 /* The hero image */
 .hero-image {
     /* The image used */
-    background-image: url(../images/denzelpr.jpg);
+    background-image: url(../images/denzelprsmall.jpg);
 
     /* Set a specific height */
     height: 100%;
@@ -198,6 +199,8 @@ main {
 }
   .cell {
     width: 50%;
+    animation: 3s fadein 1.1s forwards;
+    opacity: 0;
   }
 
   @media screen and (max-width: 1200px) {
@@ -212,34 +215,3 @@ main {
  * Footer
  *
  */
-
-footer {
-  border-top: 1px solid #e0e0e0;
-  padding: 1em;
-
-}
-
-footer li {
-  display: inline-block;
-  margin: 0 1em;
-}
-
-footer a {
-  text-decoration: none;
-  color: #333;
-  padding: 1.5em;
-
-}
-
-.project {
- margin: 0;
- padding: 0;
- list-style: none;
- background-color: blue;
-}
-
-
-
-.links {
-  margin: auto;
-}
