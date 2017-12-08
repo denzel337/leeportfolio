@@ -8,7 +8,7 @@
 }
 
 
-@media screen and (max-width: 549px) {
+/*@media screen and (max-width: 549px) {
   .header__logo {
     height: 48px;
     margin-right: 0.5em;
@@ -18,7 +18,7 @@
     margin-left: 0;
     font-size: 2em;
     vertical-align: bottom;
-  }
+  }*/
   .nav {
     z-index: 10;
     background-color: #fff;

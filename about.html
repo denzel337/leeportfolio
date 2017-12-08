@@ -12,7 +12,7 @@
     <link rel="stylesheet"  href="css/main.css">
     <link rel="stylesheet" href="css/responsive.css">
   </head>
-  <body >
+  <body>
 
 
     <div id="mySidenav" class="sidenav">
@@ -25,6 +25,7 @@
       <div class="transform"> Denzel Lee </div>
     </div>
 
+    <span style="font-size:30px;cursor:pointer"onclick="openNav()">&#9776; </span>
     <main>
 
         <div class="about">
@@ -33,10 +34,19 @@
           </div>
           <div class="bio">
             <h1>About me!</h1>
-            <p>Hey, my name is Denzel Lee and I like to code! <br> I love to help others and solve problems <br></p>
+            <p>Hey, as you may notice my name is Denzel Lee, <br>
+              I am a recent graduate whose focus is Front-End Development.<br>
+              I have a strong passion to keep learning and improving myself every day,
+              not just as a developer, but also as a person.
+                 </p>
+              <h2> Links </h2>
+
             <div class="link">
-              <h4> Links </h4>
-              <a target="_blank" href="resume.pdf">Resume
+              <a target="_blank" href="resume.pdf"> <i class="fa fa-file-pdf-o" aria-hidden="true"></i> </a>
+              <a target="_blank" href="https://www.linkedin.com/in/denzellee/"><i class="fa fa-linkedin" aria-hidden="true"> </i></a>
+              <a target="_blank" href="https://github.com/denzel337"><i class="fa fa-github" aria-hidden="true"></i></a>
+
+
             </div>
 
 
@@ -55,6 +65,14 @@ function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
     document.getElementById("main").style.marginLeft= "0";
 }
+
+function mobile_design(){
+  if (screen.width < 500) {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+  }
+}
+window.onload = mobile_design()
 </script>
   </body>
 </html>
