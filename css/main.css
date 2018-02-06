@@ -17,7 +17,7 @@ body {
 }
 
 h1, h2, h3, h4, h5 {
-  margin: 5px;
+  margin: 23px;
   text-align: center;
 }
 
@@ -182,7 +182,12 @@ text-align: center;
  }
 
  .projects img:hover {
-   background-color: black;
+  opacity: 0.5;
+
+ }
+
+ .projects h4 {
+   margin: 5px;
  }
 
  .responsive-image {

@@ -31,9 +31,11 @@
         <div class="grid">
           <div class ="cell">
             <a href="https://denzel337.github.io/lee-way" target="_blank"><img src="images/lee-way.png" class="responsive-image"></a>
+            <h4>Lee-Way Photography </h4>
           </div>
           <div class="cell">
-            <a href="grannybsoulfood.com" target="_blank"><img src="images/grannybs.png" class="responsive-image"></a>
+            <a href="http://grannybsoulfood.com" target="_blank"><img src="images/grannybs.png" class="responsive-image"></a>
+            <h4>Grannyb's Soul Food </h4>
           </div>
         </div>
       </div>
@@ -50,6 +52,13 @@ function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
     document.getElementById("main").style.marginLeft= "0";
 }
+function mobile_design(){
+  if (screen.width < 500) {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+  }
+}
+window.onload = mobile_design()
 </script>
   </body>
 </html>
