@@ -124,6 +124,7 @@ main {
   font-family: 'Spectral SC', serif;
   font-size: 25px;
   opacity: 0;
+  height: 50px;
 }
 
 .about {
@@ -217,7 +218,7 @@ text-align: center;
 
   @media screen and (max-width: 1200px) {
   .quote {
-        transform: translate(55px,268px);
+        transform: translate(123px,268px);
         font-size: 18px;
   }
 }
