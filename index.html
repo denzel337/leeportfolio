@@ -11,24 +11,98 @@
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
     <link rel="stylesheet"  href="css/main.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <script src="https://kit.fontawesome.com/8b07d28127.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+      ScrollReveal({ reset: true });
+  </script>
   </head>
 
   <body>
-
-    <div id ='main' class="hero-image">
-      <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="index.html"> <img src="images/dl.png"> </a>
-        <a href=about.html>About Me</a>
-        <a href="projects.html">Projects</a>
-        <a href="https://denzel337.github.io/lee-way" target="_blank">Photography</a>
-        <div class="transform"> Denzel Lee </div>
+    <section class ="home">
+      <div id ='main' class="hero-image">
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="#"> <img src="images/dl.png"> </a>
+          <a href=#>About Me</a>
+          <a href="#">Projects</a>
+          <a href="https://denzel337.github.io/lee-way" target="_blank">Photography</a>
+          <div class="transform"> Denzel Lee </div>
+        </div>
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+      <div class="quote"> Looking to make a change in this world,<br> one line of code at a time. </div>
       </div>
-    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
-    <div class="quote"> Looking to make a change in this world,<br> one line of code at a time. </div>
-  </div>
+    </section>
+    <section class ="about"> 
+    <main>
+      
+      <h1 class= "slide">About me!
+        <div class= "bar"><i class="fa-solid fa-horizontal-rule"></i></div>
+      </h1>
+      <div class ="skills">
+        <div class ="learnSkill">
+        <i class="fa-regular fa-book" style="font-size: 80px"></i>
+          <h2>Learner</h2>
+          <p>Not only constly learning but learning it fast</p>
+        </div>
+        <div class ="creativeSkill">
+        <i class="fa-regular fa-palette" style="font-size: 80px"></i>
+        <h2>Creative</h2>
+        <p>Being creative</p>
+      </div>
+    </div>
+        <div class="about">
+          
+          <div class = "aboutImage">
+            <img src="images/denzellee.png">
+          </div>
+          <div class="bio">
+            
+            <p>Hey, as you may notice my name is Denzel Lee, <br>
+              I am a recent graduate whose focus is Front-End Development.<br>
+              I have a strong passion to keep learning and improving myself every day,
+              not just as a developer, but also as a person.
+                 </p>
+              <h2> Links </h2>
+
+            <div class="link">
+              <a target="_blank" href="https://www.linkedin.com/in/denzellee/"><i class="fa fa-linkedin" aria-hidden="true"> </i></a>
+              <a target="_blank" href="https://github.com/denzel337"><i class="fa fa-github" aria-hidden="true"></i></a>
+            </div>
 
 
+          </div>
+
+        </div>
+      </section>
+      <section class ="projects">
+        <div class="projects">
+          <h2 class ="slide"> Projects
+            <div class= "bar"><i class="fa-solid fa-horizontal-rule"></i></div>
+           </h2>
+          <div class="grid">
+            <div class ="cell">
+              <a href="https://denzel337.github.io/lee-way" target="_blank"><img src="images/lee-way.png" class="responsive-image"></a>
+              <h4>Lee-Way Photography </h4>
+            </div>
+            <div class ="cell">
+              <a href="https://denzel337.github.io/AdviceGenerator/" target="_blank"><img src="images/AdviceG.png" class="responsive-image"></a>
+              <h4>Advice Generator </h4>
+              <i class="fa-brands fa-react fa-2xl"></i>
+              <i class="fa-brands fa-js fa-2xl"></i>
+              <div class ="cell">
+                <a href="https://denzel337.github.io/lee-way" target="_blank"><img src="images/lee-way.png" class="responsive-image"></a>
+                <h4>Lee-Way Photography </h4>
+              </div>
+            <div class ="cell">
+              <button class ="liveButton" onclick="window.location.href='https://denzel337.github.io/AdviceGenerator/';" target="_blank">Live Page</button>
+            </div>  
+  
+            </div>
+            
+          </div>
+        </div>
+      </section>
     <script>
       function openNav() {
           document.getElementById("mySidenav").style.width = "150px";
@@ -47,6 +121,20 @@
         }
       }
       window.onload = mobile_design()
+      var slideUp = {
+    distance: '150%',
+    origin: 'bottom',
+    opacity: null
+};
+
+    //   ScrollReveal().reveal('.projects',{ delay: 1000, duration: 5000, rotate: {
+    //     x: 20,
+    //     z: 20
+    // }});
+
+  
+    ScrollReveal().reveal('.slide', { distance: '200px' , origin: "left", duration: 3000 });
+    ScrollReveal().reveal('.bar', { distance: '200px' , origin: "left", duration: 3000 });
     </script>
 
   </body>
