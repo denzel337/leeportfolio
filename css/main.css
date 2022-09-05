@@ -30,7 +30,7 @@ h1, h2, h3, h4, h5 {
     
 
     /* Set a specific height */
-    height: 750px;
+    height: 805px;
 
     /* Position and center the image to scale nicely on all screens */
     background-position: center;
@@ -77,6 +77,12 @@ h1, h2, h3, h4, h5 {
 }
 .learnSkill{
   text-align: center;
+  width: 50%;
+  border-right: 5px solid #F41F4E;
+  border-left:5px solid #F41F4E;
+}
+.skillDescription{
+  margin: auto;
 }
 .creativeSkill{
   text-align: center;
@@ -149,6 +155,7 @@ main {
 }
 .slide {
   margin: 0;
+  font-size: 30px;
 }
 .bar{
   margin: 0;
