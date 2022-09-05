@@ -23,9 +23,9 @@
       <div id ='main' class="hero-image">
         <div id="mySidenav" class="sidenav">
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-          <a href="#"> <img src="images/dl.png"> </a>
-          <a href=#>About Me</a>
-          <a href="#">Projects</a>
+          <a href="#main"> <img src="images/dl.png"> </a>
+          <a href=#about>About</a>
+          <a href="#projects">Projects</a>
           <a href="https://denzel337.github.io/lee-way" target="_blank">Photography</a>
           <div class="transform"> Denzel Lee </div>
         </div>
@@ -33,7 +33,7 @@
       <div class="quote"> Looking to make a change in this world,<br> one line of code at a time. </div>
       </div>
     </section>
-    <section class ="about"> 
+    <section id ="about"> 
     <main>
       
       <h1 class= "slide">About me!
@@ -44,20 +44,15 @@
           <i class="fa-regular fa-book" style="font-size: 80px"></i>
           <div class="skillTitle"><h2>Learner</h2></div>
             <div class="skillDescription">
-              <p>orem Ipsum is simply dummy text of the printing and typesetting industry. 
-              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-              when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-              It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
-              It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-               and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+              <p>Constantly learning and being able to learn  quickly 
               </p>
             </div>
           
         </div>
         <div class ="creativeSkill">
-        <i class="fa-regular fa-palette" style="font-size: 80px"></i>
-        <h2>Creative</h2>
-        <p>Being creative</p>
+          <i class="fa-regular fa-palette" style="font-size: 80px"></i>
+          <div class="skillTitle"><h2>Creative</h2></div>
+          <div class="skillDescription"><p>Finding new solutions to problems</p></div>
       </div>
     </div>
         <div class="about">
@@ -84,7 +79,7 @@
 
         </div>
       </section>
-      <section class ="projects">
+      <section id ="projects">
         <div class="projects">
           <h2 class ="slide"> Projects
             <div class= "bar"><i class="fa-solid fa-horizontal-rule"></i></div>
@@ -147,6 +142,7 @@
     ScrollReveal().reveal('.slide', { distance: '200px' , origin: "left", duration: 3000 });
     ScrollReveal().reveal('.bar', { distance: '200px' , origin: "left", duration: 3000 });
     ScrollReveal().reveal('.skills', { distance: '200px' , origin: "bottom", duration: 3000, delay: 1000 });
+    ScrollReveal().reveal('.about', { distance: '200px' , origin: "bottom", duration: 3000, delay: 1000 });
     </script>
 
   </body>
