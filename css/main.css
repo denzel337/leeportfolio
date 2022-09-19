@@ -80,17 +80,20 @@ h1, h2, h3, h4, h5 {
 .learnSkill{
   text-align: center;
   width: 50%;
-  border-right: 5px solid #F41F4E;
-  border-left:5px solid #F41F4E;
+ 
 }
 .skillDescription{
   margin: auto;
 }
 .creativeSkill{
+  
   text-align: center;
 }
 .skills p {
 
+  color: black;
+}
+.skills h2 {
   color: black;
 }
 .sidenav a:hover {
@@ -174,7 +177,7 @@ main {
   padding-top: 60px;
 }
 .aboutImage {
-  border: 4px solid black;
+  border: 4px solid #F41F4E;
 
 }
 
